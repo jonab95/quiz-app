@@ -1,0 +1,20 @@
+.navigation {
+  .mat-toolbar {
+    background-color: cornflowerblue;
+    color: white;
+  }
+
+  .mat-button {
+    color: white;
+  }
+
+  .space {
+    flex: 1 1 auto;
+  }
+
+  .navbar {
+    a {
+      text-decoration: none;
+    }
+  }
+}

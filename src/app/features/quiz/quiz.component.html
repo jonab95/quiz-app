@@ -1,0 +1,9 @@
+<div class="quiz-application">
+    <div *ngFor="let quiz of (getData() | async)">
+        <quiz-card [quizApplication]="quiz" (increment)="increment()">
+        </quiz-card>
+    </div>
+    <div class="check-quiz-score">
+        <button mat-raised-button type="submit" color="accent" (click)="checkScore()">Check score</button>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+<mat-card class="quiz-card">
+    <mat-card-title>{{quizApplication.question.text}}</mat-card-title>
+    <mat-card-subtitle>
+        <div>Category: {{quizApplication.category}}</div>
+        <div>Difficulty: {{quizApplication.difficulty}}</div>
+    </mat-card-subtitle>
+    <mat-card-content>
+        <label>Choose an answer from the following: </label>
+        <form [formGroup]="optionsFormGroup" (ngSubmit)="onCheckAnswer()">
+            <div class="options">
+                <mat-radio-group formControlName="options">
+                    <mat-radio-button [disabled]="disabled" *ngFor="let option of options" [value]="option">
+                        {{option}}
+                    </mat-radio-button>
+                </mat-radio-group>
+            </div>
+
+            <div class="check-answer">
+                <button mat-raised-button type="submit" color="accent" mat-button>Check Answer</button>
+            </div>
+            <div class="result" *ngIf="givenAnswer;else question_not_answered">
+
+                <div>Your answer: {{givenAnswer}}</div>
+                <div>Correct answer: {{correctAnswer}}</div>
+                <div *ngIf="givenAnswer === correctAnswer" class="success">
+                    <div>Congratulations your answer is correct! <mat-icon>check_circle</mat-icon>
+                    </div>
+                </div>
+
+            </div>
+
+            <ng-template #question_not_answered>Please answer the question!</ng-template>
+        </form>
+    </mat-card-content>
+</mat-card>

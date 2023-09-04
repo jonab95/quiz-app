@@ -1,0 +1,19 @@
+<h1 mat-dialog-title>About this quiz</h1>
+<div mat-dialog-content>
+  <ul>
+    <li>There are 10 random questions (per request) taken from https://the-trivia-api.com/.</li>
+    <li>Each question has only one right answer.</li>
+    <li>Each right answer is valid only one point.</li>
+    <li>Once the answer is given, the options get disabled, therefore there is no possibility in changing it.</li>
+    <li>There is a possibility to check the correct answer, after the answer is given.</li>
+    <li>There is a possibility to check all right answers by going to "Quiz Answers" on the navigation,
+      however you need admin priviledges for that.</li>
+  </ul>
+
+</div>
+<div class="disclaimer">Note: Please do not refresh the page, the ngrx store is not persistent therefore all your data
+  will
+  get lost!</div>
+<div class="close" mat-dialog-actions>
+  <button color="accent" mat-flat-button mat-dialog-close>Close</button>
+</div>

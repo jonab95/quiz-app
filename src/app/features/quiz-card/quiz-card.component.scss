@@ -1,0 +1,41 @@
+:host {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
+
+    mat-card {
+        width: 600px;
+        min-height: 400px;
+    }
+
+}
+
+.quiz-card {
+
+    mat-card-content {
+        margin-top: 40px;
+    }
+
+    mat-card-title {
+        padding: 20px
+    }
+
+    mat-card-subtitle {
+        margin-left: 20px;
+    }
+
+    .check-answer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .success {
+        padding-top: 20px;
+        font-weight: 500;
+    }
+
+    mat-icon {
+        vertical-align: bottom;
+        color: green;
+    }
+}

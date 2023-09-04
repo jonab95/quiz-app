@@ -1,0 +1,9 @@
+<div class="score-results">
+  <h1 mat-dialog-title>Quiz Results</h1>
+  <div mat-dialog-content>
+    Your final score is {{quizAppService.score$ | async}}/10
+  </div>
+  <div class="close" mat-dialog-actions>
+    <button mat-flat-button mat-dialog-close color="accent">Close</button>
+  </div>
+</div>

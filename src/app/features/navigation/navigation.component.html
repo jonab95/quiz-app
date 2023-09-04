@@ -1,0 +1,12 @@
+<div class = "navigation">
+    <mat-toolbar class="navbar">
+        <div>
+            <div>Quiz Application</div>
+            <div *ngIf="username">Welcome {{username}}</div>
+        </div>
+        <div class="space"></div>
+        <a routerLink='/home' mat-button>Home</a>
+        <a mat-button (click)="openDialog()">About</a>
+        <a routerLink='/answers' mat-button>Quiz Answers</a>
+    </mat-toolbar>
+</div>

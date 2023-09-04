@@ -1,0 +1,14 @@
+<mat-card class="login-card">
+	<mat-card-title>Please enter a username to continue</mat-card-title>
+	<mat-card-content>
+		<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+			<mat-form-field>
+				<input type="text" matInput placeholder="Username" formControlName="username">
+			</mat-form-field>
+
+			<div class="submit">
+				<button mat-raised-button type="submit" color="accent" mat-button>Start</button>
+			</div>
+		</form>
+	</mat-card-content>
+</mat-card>
