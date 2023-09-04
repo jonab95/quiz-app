@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
-import { QuizAppService } from 'src/app/services/quiz-app.service';
+import { QuizAppService } from '../../../services/quiz-app.service'
 
 @Component({
   selector: 'answers',

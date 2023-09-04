@@ -1,7 +1,7 @@
 import { Action, createReducer, on } from '@ngrx/store';
 import { QuizActions } from './quiz.actions';
 import { EntityState, EntityAdapter, createEntityAdapter } from '@ngrx/entity';
-import { QuizApplication } from 'src/app/entities/quiz';
+import { QuizApplication } from '../../entities/quiz';
 
 //QUIZ REDUCER - Reacts on actions, stores data in store
 

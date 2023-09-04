@@ -7,9 +7,8 @@ import {
 } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
-import { QuizActions } from 'src/app/+store/quiz/quiz.actions';
-import { UserActions } from 'src/app/+store/user/user.actions';
-import * as fromReducer from 'src/app/+store/user/user.reducers';
+import { UserActions } from '../../../+store/user/user.actions';
+import * as fromReducer from '../../../+store/user/user.reducers';
 
 @Component({
   selector: 'home',
