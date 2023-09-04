@@ -28,6 +28,7 @@ export class HomeComponent {
     private store: Store<fromReducer.UserState>
   ) {}
 
+  //validates username, it should not start with a number, also the username is required
   usernameValidator(
     control: AbstractControl
   ): { [key: string]: boolean } | null {
@@ -44,7 +45,6 @@ export class HomeComponent {
           username: this.loginForm.value.username,
         })
       );
-    
       this.router.navigate(['/quiz']);
     }
   }
